@@ -1,0 +1,1 @@
+export function onRequest({request}){const r=Response.redirect(new URL('/login.html',request.url),303);r.headers.set('Set-Cookie','wedding_session=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0');return r}
